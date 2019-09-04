@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body,button,input{
+    font:12px Arial;
+}
+
+li{
+    list-style: none;
+/*cancel list point style.*/
+}
+
+
+a{
+    color: #666;
+    text-decoration: none;
+
+}
+input,button
+{
+    border: none;
+    outline: none;
+}
