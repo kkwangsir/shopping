@@ -33,6 +33,17 @@ body{
     margin:0 auto;
 /*    set width */
 }
+.clearfix{
+    *zoom:1;
+}
+
+.clearfix::after{
+    content:"";
+    display: block;
+    height: 0;
+    clear: both;
+
+}
 
 /*set top nav size padding and color*/
 .top-nav{
