@@ -68,3 +68,43 @@ body{
     /*make them horizontal*/
     margin-left: 10px;
 }
+
+/*search bar*/
+.searchWrap .w{
+     position: relative;
+}
+.logo{
+    left: 15px;
+    top: 30px;
+    position: absolute;
+    width:150px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 40px;
+    color: #e63e3e;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+.search-box{
+    padding: 40px 0 40px 300px;
+}
+
+.searchInput{
+    float:left;
+    width: 530px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #dddddd;
+    padding: 0 10px;
+    font-size: 15px;
+
+}
+.search-box .search-btn {
+    float:left;
+    width: 50px;
+    height: 42px;
+    background-color: #e63e3e;
+    color: white;
+}
