@@ -52,3 +52,8 @@ body{
 .top-nav .nav-list{
     float: right;
 }
+.top-nav .nav-list li{
+    display: inline-block;
+    /*make them horizontal*/
+    margin-left: 10px;
+}
