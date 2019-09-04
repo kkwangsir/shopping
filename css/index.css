@@ -108,3 +108,19 @@ body{
     background-color: #e63e3e;
     color: white;
 }
+.search-suggest{
+    display: none;
+    position: absolute;
+    top:82px;
+    width: 550px;
+    background-color: #fff;
+    border: 1px solid #dddddd;
+
+
+}
+.search-suggest ul li{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+}
