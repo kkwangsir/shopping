@@ -24,3 +24,6 @@ input,button
     border: none;
     outline: none;
 }
+body{
+    background-color: #f8fafc;
+}
