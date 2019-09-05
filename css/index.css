@@ -124,3 +124,32 @@ body{
     font-size: 14px;
     padding: 0 10px;
 }
+
+categories
+.menu{
+    padding-bottom: 30px;
+}
+.aside-nav{
+    float:left;
+    width:200px;
+    height:500px;
+    box-shadow: 2px 6px 9px rgba(0,0,0,.2);
+
+/*    set box style*/
+
+}
+
+.list-item .item-href{
+    display: block;
+    margin: 0 20px;
+    height: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #333333;
+    border-bottom: 1px dotted;
+    box-sizing: border-box;
+
+
+/*    set items to block, color , size, margin,
+and add dotted line at bottom*/
+}
