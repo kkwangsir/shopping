@@ -160,6 +160,8 @@ and add dotted line at bottom*/
 /*    remove the last items' dashed line*/
 }
 
+
+
 /*make sub categories*/
 .nav-list{
     position: relative;
@@ -179,7 +181,61 @@ and add dotted line at bottom*/
 
 /*initial display to none
 set position to abs and parent class is relative,
-set shadow and bakgaround, and let top to 0 to fit position
+set shadow and background, and let top to 0 to fit position
 
 */
+}
+
+.list-item:hover .item-menu{
+    display: block;
+/*   listener and show */
+}
+
+.subcate{
+    float: left;
+    width: 610px;
+    padding: 30px 20px 20px 20px;
+
+}
+
+.subcate .subcate_item{
+    position: relative;
+    padding-left: 80px;
+}
+
+.subcate .subcate_item .subcate_title{
+    position: absolute;
+    top: 3px;
+    left:0;
+    width: 70px;
+    text-align: right;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 700;
+/*text overflow then hid it*/
+}
+
+.subcate_title .subcate_title_arrow{
+    margin-left: 5px;
+/*    move arrow*/
+}
+
+.subact .subcate_con{
+
+    padding: 5px;
+}
+.subcate .subcate_con .subcate_con_lk{
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    border-left: 1px solid #dddddd;
+    padding: 0 10px;
+    margin: 3px 0;
+/*make content link float and set size and color and padding*/
+}
+.subcate .subcate_con_lk:hover,
+.subcate .subcate_con .subcate_con_lk:hover{
+    color: #e63625;
+/*using hover  to turn red color when mouse focus*/
 }
