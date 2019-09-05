@@ -167,7 +167,13 @@ and add dotted line at bottom*/
     position: relative;
 }
 
+.list-item:hover,
+.list-item:hover .item-href{
+    background-color: #ff5f96;
+    color: #ffffff;
 
+/*    hover list item color */
+}
 .nav-list .item-menu{
     display: none;
     position: absolute;
@@ -188,7 +194,7 @@ set shadow and background, and let top to 0 to fit position
 
 .list-item:hover .item-menu{
     display: block;
-/*   listener and show */
+/* listener and show */
 }
 
 .subcate{
