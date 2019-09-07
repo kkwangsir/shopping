@@ -45,7 +45,6 @@ body{
 
 }
 
-/*set top nav size padding and color*/
 .top-nav{
     background: #f5f5f5;
     padding: 10px;
@@ -84,6 +83,7 @@ body{
     color: #e63e3e;
     font-weight: bold;
     text-align: center;
+    stroke-width:10px;
 
 
 }
