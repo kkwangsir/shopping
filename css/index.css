@@ -245,3 +245,33 @@ set shadow and background, and let top to 0 to fit position
     color: #e63625;
 /*using hover  to turn red color when mouse focus*/
 }
+
+/*slide show*/
+
+.banner-wrap{
+    float: left;
+    margin-left: 20px;
+}
+
+.banner-wrap .banner{
+    width: 970px;
+    height: 500px;
+}
+
+.banner-wrap .banner ul{
+    /*flex make picture showing horizontal*/
+    display: flex;
+    width: 100%;
+}
+.banner-wrap .banner ul li a{
+    display: block;
+    width: 970px;
+    height: 500px;
+}
+.banner-wrap .banner ul li a img{
+    width: 100%;
+    height: 100%;
+
+}
+
+
