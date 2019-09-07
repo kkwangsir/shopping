@@ -254,6 +254,7 @@ set shadow and background, and let top to 0 to fit position
 }
 
 .banner-wrap .banner{
+    position: relative;
     width: 970px;
     height: 500px;
 }
@@ -274,4 +275,24 @@ set shadow and background, and let top to 0 to fit position
 
 }
 
+.prev{
+    left: 30px;
+}
+.next{
+    right: 30px;
+}
+
+.swiper-arrow{
+    color: #ffffff;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    /*make arrow at real center*/
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 

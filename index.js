@@ -16,6 +16,46 @@ window.onload = function(){
     //lose focus makes element undisplayed
 
     }
+    bannerOption();
+    function bannerOption() {
+        var swiper = document.getElementById("swiper");//get slide show layer
+        var swiperItem = swiper.getElementsByClassName("swiper-item"); // get elements
+        var prev = document.getElementsByClassName("prev")[0];//get prev
+        var next = document.getElementsByClassName("next")[0]; //get next
+
+        var index=0;// num of slide show is 0
+
+        for(var i=0;i< swiperItem.length;i++){
+            if (index ==i){
+                swiperItem[i].style.opacity =1;
+
+            }else {
+                swiperItem[i].style.opacity =0;
+            }
+            swiperItem[i].style.transform = "translateX(" + (-i * swiperItem[0].offsetWidth) + "px)";
+        }
+
+        prev.onclick= function () {
+            index--;
+            changeImg()
+
+        }
+        next.onclick=function () {
+            index++;
+            changeImg()
+        }
+
+        //function make current index picture show
+        function changeImg(){
+            for(var j = 0; j <swiperItem.length;j++){
+                swiperItem[j].style.opacity=0;
+            }
+            swiperItem[index].style.opacity=1;
+        }
+
+    }
+
 
 }
+
 
