@@ -47,6 +47,11 @@ window.onload = function(){
 
         //function make current index picture show
         function changeImg(){
+            if (index<0){
+                index = swiperItem.length -1;
+            }else if(index > swiperItem.length-1){
+                index =0
+            }
             for(var j = 0; j <swiperItem.length;j++){
                 swiperItem[j].style.opacity=0;
             }
