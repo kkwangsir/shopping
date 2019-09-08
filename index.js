@@ -1,8 +1,8 @@
 window.onload = function(){
     var searchInput =document.getElementById("searchInput");
-    searchInput.addEventListener("keyup",showKeyword,false)
-    searchInput.addEventListener("blur",hideKeyword,false)
-    searchInput.addEventListener("focus",showKeyword,false)
+    searchInput.addEventListener("keyup",showKeyword,false);
+    searchInput.addEventListener("blur",hideKeyword,false);
+    searchInput.addEventListener("focus",showKeyword,false);
 
     function showKeyword() {
         if(searchInput.value !==""){
@@ -22,6 +22,9 @@ window.onload = function(){
         var swiperItem = swiper.getElementsByClassName("swiper-item"); // get elements
         var prev = document.getElementsByClassName("prev")[0];//get prev
         var next = document.getElementsByClassName("next")[0]; //get next
+        var timer =null;
+
+
 
         var index=0;// num of slide show is 0
 
@@ -40,6 +43,7 @@ window.onload = function(){
             changeImg()
 
         }
+
         next.onclick=function () {
             index++;
             changeImg()
@@ -57,7 +61,15 @@ window.onload = function(){
             }
             swiperItem[index].style.opacity=1;
         }
+        autoChange();
+        // auto play pics
+        function autoChange(){
+            timer = setInterval(function () {
+                index++;
+                changeImg();
+            }, 3000);
 
+        }
     }
 
 
