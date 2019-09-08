@@ -23,13 +23,10 @@ window.onload = function(){
         var prev = document.getElementsByClassName("prev")[0];//get prev
         var next = document.getElementsByClassName("next")[0]; //get next
         var timer =null;
-
-
-
         var index=0;// num of slide show is 0
 
         for(var i=0;i< swiperItem.length;i++){
-            if (index ==i){
+            if (index ===i){
                 swiperItem[i].style.opacity =1;
 
             }else {
@@ -48,6 +45,9 @@ window.onload = function(){
             index++;
             changeImg()
         }
+        swiper.addEventListener("mouseover", function () {
+            clea
+        },false)
 
         //function make current index picture show
         function changeImg(){

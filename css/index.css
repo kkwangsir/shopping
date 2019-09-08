@@ -5,7 +5,9 @@
 }
 
 body,button,input{
-    font:12px Arial;
+    font-family: 'Hind', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 li{
@@ -80,7 +82,7 @@ body{
     height: 56px;
     line-height: 56px;
     font-size: 40px;
-    color: #e63e3e;
+    /*color: #e63e3e;*/
     font-weight: bold;
     text-align: center;
     stroke-width:10px;
@@ -169,7 +171,7 @@ and add dotted line at bottom*/
 
 .list-item:hover,
 .list-item:hover .item-href{
-    background-color: #ff5f96;
+    background-color: #e63625;
     color: #ffffff;
 
 /*    */
@@ -211,7 +213,7 @@ set shadow and background, and let top to 0 to fit position
 
 .subcate .subcate_item .subcate_title{
     position: absolute;
-    top: 3px;
+    top: 0px;
     left:0;
     width: 70px;
     text-align: right;
@@ -264,6 +266,12 @@ set shadow and background, and let top to 0 to fit position
     display: flex;
     width: 100%;
 }
+/* fade*/
+
+.banner-wrap .banner ul li{
+    transition: opacity .7s;
+}
+
 .banner-wrap .banner ul li a{
     display: block;
     width: 970px;
