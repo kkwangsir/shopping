@@ -46,7 +46,10 @@ window.onload = function(){
             changeImg()
         }
         swiper.addEventListener("mouseover", function () {
-            clea
+            clearInterval(timer)
+        },false)
+        swiper.addEventListener("mouseout",function () {
+            autoChange()
         },false)
 
         //function make current index picture show
