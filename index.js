@@ -40,6 +40,7 @@ window.onload = function(){
         //listener for cycle point 
         for(var k =0; k< indicators.length; k++){
             indicators[k].onclick =function () {
+                clearInterval(timer);
                 var clickIndex = parseInt(this.getAttribute("data-index"));
                 index = clickIndex;
                 changeImg();
@@ -48,12 +49,16 @@ window.onload = function(){
         
         
         prev.onclick= function () {
+            clearInterval(timer);
+
             index--;
             changeImg()
 
         }
 
         next.onclick=function () {
+            clearInterval(timer);
+
             index++;
             changeImg()
         }
