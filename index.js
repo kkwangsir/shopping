@@ -24,7 +24,10 @@ window.onload = function(){
         var next = document.getElementsByClassName("next")[0]; //get next
         var timer =null;
         var index=0;// num of slide show is 0
+        var indicators = document.getElementsByClassName("indicator");// get little cycle points
 
+
+        //set slide show's opacity and move position
         for(var i=0;i< swiperItem.length;i++){
             if (index ===i){
                 swiperItem[i].style.opacity =1;
@@ -34,7 +37,16 @@ window.onload = function(){
             }
             swiperItem[i].style.transform = "translateX(" + (-i * swiperItem[0].offsetWidth) + "px)";
         }
-
+        //listener for cycle point 
+        for(var k =0; k< indicators.length; k++){
+            indicators[k].onclick =function () {
+                var clickIndex = parseInt(this.getAttribute("data-index"));
+                index = clickIndex;
+                changeImg();
+            }
+        }
+        
+        
         prev.onclick= function () {
             index--;
             changeImg()
@@ -63,6 +75,7 @@ window.onload = function(){
                 swiperItem[j].style.opacity=0;
             }
             swiperItem[index].style.opacity=1;
+            setIndicatorOn();
         }
         autoChange();
         // auto play pics
@@ -71,6 +84,14 @@ window.onload = function(){
                 index++;
                 changeImg();
             }, 3000);
+
+        }
+        //active indicator
+        function setIndicatorOn() {
+            for (var i=0; i<indicators.length;i++){
+                indicators[i].classList.remove("on");
+            }
+            indicators[index].classList.add("on")
 
         }
     }

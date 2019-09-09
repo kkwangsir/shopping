@@ -304,3 +304,27 @@ set shadow and background, and let top to 0 to fit position
     cursor: pointer;
 }
 
+.indicators{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 14px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 10px;
+
+}
+.indicator{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    transform: translateY(-20%);
+    background-color: #ffffff;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.indicators .on{
+    background-color: #ff5000;
+}
