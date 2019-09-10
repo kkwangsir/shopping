@@ -413,6 +413,10 @@ set shadow and background, and let top to 0 to fit position
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.deal_item_lk:hover .deal_item_name{
+    color: #e63e3e;
+}
 .deal_item_buy{
     line-height: 20px;
     margin: 10px 0;
