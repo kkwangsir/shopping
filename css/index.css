@@ -326,5 +326,158 @@ set shadow and background, and let top to 0 to fit position
 }
 
 .indicators .on{
-    background-color: #ff5000;
+    background-color: #333333;
+}
+
+
+/*lighting deal*/
+.lighting_deal .deal_time{
+    position: relative;
+    float:left;
+    width:200px;
+    height: 275px;
+    background-color: #e63e3e;
+    color: #ffffff;
+}
+.deal_time .deal_title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+
+}
+.deal_time .deal_desc{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+.countdown{
+    position: absolute;
+    bottom: 20px;
+    left: 32.5px;
+
+}
+.countdown .cd_item{
+    float: left;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+.deal_list{
+    float: left;
+    width: 990px;
+    height: 275px;
+}
+
+.deal_list .deal_items{
+    float:left;
+    width: 198px;
+    height: 275px;
+    background-color: #ffffff;
+
+
+}
+
+.deal_item_lk{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+}
+
+.deal_item_lk .deal_item_img{
+    display: block;
+    width: 140px;
+    height: 140px;
+    padding: 20px;
+    margin: auto;
+}
+.deal_item_lk:hover .deal_item_img{
+    transform: scale(1.1);
+    transition: transform .5s ease;
+}
+
+.deal_item_lk .deal_item_name{
+    position: relative;
+    padding: 0 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.deal_item_buy{
+    line-height: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.deal_item_buy .progress{
+    display: inline-block;
+    width: 100px;
+    background-color: #dddddd;
+    height: 10px;
+
+    border-radius: 5px;
+    margin: 5px 5px;
+
+}
+
+
+
+.deal_item_buy .progress .progress_bar{
+
+    display: block;
+    width: 30%;
+    height: 10px;
+    background-color: #e63e3e;
+    border-radius: 5px 0 0 5px;
+}
+
+.deal_item_buy .buy_num{
+    /*position: relative;*/
+    /*top: -5px;*/
+    display: inline-block;
+    transform: translateY(-25%);
+    color: #e63e3e;
+    font-size: 15px;
+
+}
+
+.deal_item_price{
+    display: block;
+    width: 160px;
+    margin: auto;
+    border: 1px solid #e63e3e;
+
+
+
+}
+
+.deal_item_price .regular_price{
+    float: left;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.deal_item_price .new_price{
+    font-size: 14px;
+    background-color: #e63e3e;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.deal_item_price .original_price{
+    color: #999999;
+    text-decoration: line-through;
+
 }
