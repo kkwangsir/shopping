@@ -17,6 +17,7 @@ window.onload = function(){
 
     }
     bannerOption();
+    // slide show contronl
     function bannerOption() {
         var swiper = document.getElementById("swiper");//get slide show layer
         var swiperItem = swiper.getElementsByClassName("swiper-item"); // get elements
@@ -99,6 +100,32 @@ window.onload = function(){
             indicators[index].classList.add("on")
 
         }
+    }
+
+
+    //lighing deal count down
+    var deal_time=7200;
+    var deal_timer= setInterval(function () {
+        if(deal_timer<0){
+            clearInterval(deal_timer)
+        }else {
+            calTime(deal_time);
+            deal_time--
+
+        }
+
+    },1000)
+    function calTime(time) {
+        var hour = Math.floor(time/60/60); // hour
+        var minutes =Math.floor(time/60 % 60) //modulus to seconds
+        var seconds =Math.floor(time%60) // modulus to seconds
+
+        document.getElementsByClassName("cd_hour")[0].innerHTML =hour;
+        document.getElementsByClassName("cd_minute")[0].innerHTML=minutes;
+        document.getElementsByClassName("cd_second")[0].innerHTML=seconds;
+
+
+
     }
 
 
