@@ -104,7 +104,7 @@ window.onload = function(){
 
 
     //lighing deal count down
-    var deal_time=7200;
+    var deal_time=70;
     var deal_timer= setInterval(function () {
         if(deal_timer<0){
             clearInterval(deal_timer)
@@ -130,6 +130,7 @@ window.onload = function(){
 
 
     }
+    //format time sytle, add 0 before digit when it is less than 10
     function formatTime(t) {
         if (t <10){
             t="0"+t

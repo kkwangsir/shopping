@@ -485,3 +485,114 @@ set shadow and background, and let top to 0 to fit position
     text-decoration: line-through;
 
 }
+
+/*hot sale area*/
+.layer{
+    padding-bottom: 20px;
+}
+
+.layer_inner{
+    background-color: #ffffff;
+
+}
+.layer_inner h3{
+    padding:20px;
+    font-size: 20px;
+    height: 22px;
+    line-height: 22px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.layer_inner h3::before{
+    content: "";
+    float: left;
+    width: 4px;
+    height:16px;
+    margin: 1px 6px 0 0;
+
+
+}
+.hotSale{
+    color: #e63625;
+}
+.hotSale::before{
+    background-color: #e63625;
+}
+
+.saleList .item{
+    float:left;
+    width: 196px;
+    padding: 20px;
+    border: 1px solid #f8fafc;
+}
+
+.saleList .bs_item:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.saleList .item a{
+    display: block;
+
+}
+
+.saleList .item a .item_img{
+    width: 196px;
+    height: 196px;
+
+}
+
+.saleList .item .title{
+
+    font-size: 14px;
+    color: #666666;
+    height: 40px;
+    overflow: hidden;
+    line-height: 20px;
+    margin: 8px 0;
+
+}
+
+.saleList .line_2{
+    margin-bottom: 10px;
+}
+
+.saleList .comment,
+.saleList .collect{
+    float: left;
+    color: #999999;
+    margin-right: 10px;
+
+}
+
+.saleList .comment em,
+.saleList .collect em{
+    font-style: normal;
+
+    margin-left: 5px;
+
+}
+
+.saleList .strong{
+    color: #e63625;
+    font-size: 22px;
+    margin-right: 2px;
+}
+
+.saleList .strong::before{
+    /*content: "$";*/
+    font-size: 15px;
+    color: #e63625;
+    margin-right: 3px;
+}
+
+.saleList .price_through{
+    text-decoration: line-through;
+    color: #999999;
+    font-size: 12px;
+
+}
+
+.saleList .sell{
+    float: right;
+    color: #999999;
+    margin-top: 7px;
+}
