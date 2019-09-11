@@ -119,6 +119,9 @@ window.onload = function(){
         var hour = Math.floor(time/60/60); // hour
         var minutes =Math.floor(time/60 % 60) //modulus to seconds
         var seconds =Math.floor(time%60) // modulus to seconds
+        hour =formatTime(hour);
+        minutes=formatTime(minutes);
+        seconds=formatTime(seconds);
 
         document.getElementsByClassName("cd_hour")[0].innerHTML =hour;
         document.getElementsByClassName("cd_minute")[0].innerHTML=minutes;
@@ -126,6 +129,12 @@ window.onload = function(){
 
 
 
+    }
+    function formatTime(t) {
+        if (t <10){
+            t="0"+t
+        }
+        return t;
     }
 
 
