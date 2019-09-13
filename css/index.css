@@ -488,7 +488,7 @@ set shadow and background, and let top to 0 to fit position
 
 /*hot sale area*/
 .layer{
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .layer_inner{
@@ -519,6 +519,7 @@ set shadow and background, and let top to 0 to fit position
 }
 
 .saleList .item{
+    position: relative;
     float:left;
     width: 196px;
     padding: 20px;
@@ -527,6 +528,10 @@ set shadow and background, and let top to 0 to fit position
 
 .saleList .bs_item:hover{
     box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+
+.saleList .like_item:hover{
+    border-color: #e63625;
 }
 
 .saleList .item a{
@@ -595,4 +600,21 @@ set shadow and background, and let top to 0 to fit position
     float: right;
     color: #999999;
     margin-top: 7px;
+}
+
+
+/*guess you like*/
+
+.saleList .item .item_more{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #e63625;
+    color: white;
+
 }
