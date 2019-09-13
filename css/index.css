@@ -514,8 +514,18 @@ set shadow and background, and let top to 0 to fit position
 .hotSale{
     color: #e63625;
 }
+
+
 .hotSale::before{
     background-color: #e63625;
+}
+
+.likeSale{
+    color: #ff9f00;
+}
+
+.likeSale::before{
+    background-color: #ff9f00;
 }
 
 .saleList .item{
@@ -532,6 +542,7 @@ set shadow and background, and let top to 0 to fit position
 
 .saleList .like_item:hover{
     border-color: #e63625;
+    transition: border-color .3s;
 }
 
 .saleList .item a{
@@ -606,6 +617,7 @@ set shadow and background, and let top to 0 to fit position
 /*guess you like*/
 
 .saleList .item .item_more{
+    display: none;
     position: absolute;
     left:0;
     bottom: 0;
@@ -616,5 +628,28 @@ set shadow and background, and let top to 0 to fit position
     font-size: 15px;
     background-color: #e63625;
     color: white;
+
+}
+
+.saleList .like_item:hover .item_more{
+    display: block;
+}
+
+/*load more*/
+.loadMore{
+    padding: 30px 0;
+}
+
+.loadMore span{
+    display: block;
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e63e3e;
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    cursor:pointer;
 
 }
