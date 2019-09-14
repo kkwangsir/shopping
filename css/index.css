@@ -653,3 +653,16 @@ set shadow and background, and let top to 0 to fit position
     cursor:pointer;
 
 }
+
+.footer_social{
+    height: 48px;
+    text-align: center;
+}
+.footer_social a{
+    display: inline-block;
+    height: 48px;
+}
+.footer_social a img{
+    height: 28px;
+
+}
