@@ -104,6 +104,7 @@ body{
 
 }
 .search-box .search-btn {
+    font-size: 12px;
     float:left;
     width: 50px;
     height: 42px;
@@ -183,7 +184,7 @@ and add dotted line at bottom*/
     width:900px;
     top: 0;
     min-height: 500px;
-    background-color: #ffffff;
+    background-color: #f8fafc;
     z-index: 999;
     box-shadow: 2px 2px 9px rgba(0, 0, 0, .2);
 
