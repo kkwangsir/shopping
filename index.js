@@ -104,7 +104,7 @@ window.onload = function(){
 
 
     //lighing deal count down
-    var deal_time=70;
+    var deal_time=1000;
     var deal_timer= setInterval(function () {
         if(deal_timer<0){
             clearInterval(deal_timer)
