@@ -655,15 +655,52 @@ set shadow and background, and let top to 0 to fit position
 
 }
 
-.footer_social{
+
+
+.footer {
+    background-color: #ffffff;
+
+}
+
+.footer_container{
+    height: 144px;
+    padding-top: 15px;
+}
+
+.footer_social {
     height: 48px;
     text-align: center;
 }
+
 .footer_social a{
     display: inline-block;
     height: 48px;
 }
 .footer_social a img{
     height: 28px;
+    padding: 10px 20px;
+}
+.footer_link {
+    text-align: center;
+    margin:10px 0;
+}
 
+.footer_link li{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer_link li a:hover{
+    text-decoration: underline;
+}
+
+.footer_copyright{
+    color: #515151;
+    width: 450px;
+    margin: auto;
+    border-top: 1px solid #333333;
+    text-align: center;
+    padding-top: 10px;
 }
