@@ -4,12 +4,14 @@ window.onload = function(){
 
     },true);
     var searchInput =document.getElementById("searchInput");
-    searchInput.addEventListener("keyup",showKeyword,false);
+    searchInput.addEventListener("keyup",debounce(getSuggest(),500),false);
     searchInput.addEventListener("blur",hideKeyword,false);
     searchInput.addEventListener("focus",showKeyword,false);
 
     function showKeyword() {
         if(searchInput.value !==""){
+            getSuggest()
+
             document.getElementById("search-suggest").style.display="block";
 
         }
@@ -20,6 +22,40 @@ window.onload = function(){
     //lose focus makes element undisplayed
 
     }
+    //get suggest words
+    function getSuggest() {
+        ajax("get","suggest.json",function (res) {
+            if(res.code==0){
+                var suggest_list=document.getElementById("search-suggest");//get suggest list
+                var data =res.data;
+                // console.log(data);
+                var str=""
+                for(var i=0;i<data.length; i++){
+                    str+="<li>"+data[i].suggestname+"</li>"
+
+                }
+                suggest_list.innerHTML = str
+                // console.log(str)
+                showKeyword();
+
+            }
+        },true)
+        
+    }
+
+    //
+
+    function debounce(fn,delay) {
+        var handle;
+        return function () {
+            clearTimeout(handle);
+            handle = setTimeout(function () {
+                fn;
+            },delay)
+        }
+
+    }
+    
     bannerOption();
     // slide show contronl
     function bannerOption() {

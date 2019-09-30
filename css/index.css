@@ -118,10 +118,11 @@ body{
     width: 550px;
     background-color: #fff;
     border: 1px solid #dddddd;
+    z-index: 1000;
 
 
 }
-.search-suggest ul li{
+ul.search-suggest li{
     height: 30px;
     line-height: 30px;
     font-size: 14px;

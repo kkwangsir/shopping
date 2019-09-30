@@ -1,0 +1,17 @@
+{
+  "data": [
+    {"id": 1,
+      "suggestname": "TV"
+    },
+    {
+      "id": 2,
+      "suggestname": "desk"
+    },
+    {
+      "id": 3,
+      "suggestname": "laptop"
+    }
+  ],
+  "code": 0,
+  "msg": "requst succeed"
+}
