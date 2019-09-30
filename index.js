@@ -1,4 +1,8 @@
 window.onload = function(){
+    ajax("get","tsconfig.json",function(res){
+        console.log(res)
+
+    },true);
     var searchInput =document.getElementById("searchInput");
     searchInput.addEventListener("keyup",showKeyword,false);
     searchInput.addEventListener("blur",hideKeyword,false);
